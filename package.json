@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && electron .",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "start:dev": "npm run build && electron . --no-sandbox"
   },
   "keywords": [],
   "author": "",

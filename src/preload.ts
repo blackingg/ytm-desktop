@@ -1,15 +1,5 @@
 import { contextBridge } from 'electron';
-
-interface TrackInfo {
-  title: string | null;
-  artist: string | null;
-}
-
-interface YTMApi {
-  playPause: () => void;
-  next: () => void;
-  getTrackInfo: () => TrackInfo;
-}
+import { TrackInfo, YTMApi } from './types';
 
 contextBridge.exposeInMainWorld('ytm', {
   playPause: (): void => {
