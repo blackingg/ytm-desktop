@@ -1,15 +1,19 @@
 {
   "name": "ytm-desktop",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
-    "start": "electron ."
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "dev": "tsc --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^37.2.1"
+    "@types/electron": "^1.4.38",
+    "electron": "^37.2.1",
+    "typescript": "^5.9.2"
   }
 }
