@@ -1,2 +1,4 @@
 node_modules/
 backend/oauth.json
+dist/
+*.tsbuildinfo
