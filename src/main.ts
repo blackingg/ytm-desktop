@@ -1,8 +1,8 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
+import { app, BrowserWindow } from 'electron';
+import * as path from 'path';
 
-app.whenReady().then(() => {
-  const win = new BrowserWindow({
+app.whenReady().then((): void => {
+  const win: BrowserWindow = new BrowserWindow({
     width: 1200,
     height: 800,
     webPreferences: {
@@ -13,4 +13,3 @@ app.whenReady().then(() => {
 
   win.loadURL('https://music.youtube.com');
 });
-``
